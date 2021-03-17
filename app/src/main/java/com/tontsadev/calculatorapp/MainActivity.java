@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         int cursorPos = display.getSelectionStart();
         String leftStr = oldStr.substring(0, cursorPos);
         String rightStr = oldStr.substring(cursorPos);
+
         if (getString(R.string.display).equals(display.getText().toString())){
             display.setText(strToAdd);
             display.setSelection(cursorPos + 1);
@@ -148,7 +149,6 @@ public class MainActivity extends AppCompatActivity {
         userExp = userExp.replaceAll("×", "*");
 
         Expression exp = new Expression(userExp);
-
         String result = String.valueOf(exp.calculate());
 
         display.setText(result);
