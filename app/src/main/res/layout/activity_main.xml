@@ -280,7 +280,7 @@
                 android:background="@drawable/circle"
                 android:onClick="equalsBTN"
                 android:text="@string/equals"
-                android:textColor="#003EFF"
+                android:textColor="#0CC276"
                 android:textSize="24sp" />
 
         </TableRow>
