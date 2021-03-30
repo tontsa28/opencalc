@@ -11,7 +11,7 @@
         android:id="@+id/tableLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="400dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -33,7 +33,7 @@
                 android:onClick="clearBTN"
                 android:text="@string/clear"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/parenthesesBTN"
@@ -45,7 +45,7 @@
                 android:onClick="parenthesesBTN"
                 android:text="@string/parentheses"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/exponentBTN"
@@ -57,7 +57,7 @@
                 android:onClick="exponentBTN"
                 android:text="@string/exponent"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/divideBTN"
@@ -69,7 +69,7 @@
                 android:onClick="divideBTN"
                 android:text="@string/divide"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
         </TableRow>
 
         <TableRow
@@ -86,7 +86,7 @@
                 android:onClick="sevenBTN"
                 android:text="@string/seven"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/eight"
@@ -98,7 +98,7 @@
                 android:onClick="eightBTN"
                 android:text="@string/eight"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/nine"
@@ -110,7 +110,7 @@
                 android:onClick="nineBTN"
                 android:text="@string/nine"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/multiply"
@@ -122,7 +122,7 @@
                 android:onClick="multiplyBTN"
                 android:text="@string/multiply"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
         </TableRow>
 
         <TableRow
@@ -139,7 +139,7 @@
                 android:onClick="fourBTN"
                 android:text="@string/four"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/fiveBTN"
@@ -151,7 +151,7 @@
                 android:onClick="fiveBTN"
                 android:text="@string/five"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/sixBTN"
@@ -163,7 +163,7 @@
                 android:onClick="sixBTN"
                 android:text="@string/six"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/subtractBTN"
@@ -175,7 +175,7 @@
                 android:onClick="subtractBTN"
                 android:text="@string/subtract"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
         </TableRow>
 
         <TableRow
@@ -192,7 +192,7 @@
                 android:onClick="oneBTN"
                 android:text="@string/one"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/twoBTN"
@@ -204,7 +204,7 @@
                 android:onClick="twoBTN"
                 android:text="@string/two"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/threeBTN"
@@ -216,7 +216,7 @@
                 android:onClick="threeBTN"
                 android:text="@string/three"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/addBTN"
@@ -228,7 +228,7 @@
                 android:onClick="addBTN"
                 android:text="@string/add"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
         </TableRow>
 
         <TableRow
@@ -245,7 +245,7 @@
                 android:onClick="plusMinusBTN"
                 android:text="@string/plusMinus"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/zeroBTN"
@@ -257,7 +257,7 @@
                 android:onClick="zeroBTN"
                 android:text="@string/zero"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/pointBTN"
@@ -269,7 +269,7 @@
                 android:onClick="pointBTN"
                 android:text="@string/point"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
             <Button
                 android:id="@+id/equalsBTN"
@@ -281,7 +281,7 @@
                 android:onClick="equalsBTN"
                 android:text="@string/equals"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="@dimen/_32sdp" />
 
         </TableRow>
     </TableLayout>
@@ -289,17 +289,17 @@
     <ImageButton
         android:id="@+id/display"
         style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_93sdp"
+        android:layout_height="@dimen/_85sdp"
         android:background="@drawable/circle"
         android:contentDescription="@string/backspace"
         android:onClick="backspaceBTN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.97"
+        app:layout_constraintHorizontal_bias="1.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314"
+        app:layout_constraintVertical_bias="0.423"
         app:srcCompat="@drawable/backspace" />
 
     <EditText
@@ -311,7 +311,7 @@
         android:text="@string/display"
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:textSize="@dimen/_48sdp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
