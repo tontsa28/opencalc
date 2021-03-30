@@ -1,7 +1,8 @@
-package com.tontsadev.calculatorapp;
+package com.tontsadev.opencalc;
 
 import androidx.appcompat.app.AppCompatActivity;
 import org.mariuszgromada.math.mxparser.*;
+
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
@@ -144,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void equalsBTN(View view) {
+
         String userExp = display.getText().toString();
         userExp = userExp.replaceAll("÷", "/");
         userExp = userExp.replaceAll("×", "*");
@@ -156,6 +158,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void backspaceBTN(View view) {
+
         int cursorPos = display.getSelectionStart();
         int textLen = display.getText().length();
 

@@ -29,10 +29,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:background="@drawable/circle"
+                android:background="@drawable/circle_clear"
                 android:onClick="clearBTN"
                 android:text="@string/clear"
-                android:textColor="#FF0000"
+                android:textColor="#FFFFFF"
                 android:textSize="24sp" />
 
             <Button
@@ -277,10 +277,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:background="@drawable/circle"
+                android:background="@drawable/circle_equals"
                 android:onClick="equalsBTN"
                 android:text="@string/equals"
-                android:textColor="#0CC276"
+                android:textColor="#FFFFFF"
                 android:textSize="24sp" />
 
         </TableRow>

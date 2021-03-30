@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalculatorApp</string>
+    <string name="app_name">OpenCalc</string>
 
     <string name="zero">0</string>
     <string name="one">1</string>

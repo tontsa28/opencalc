@@ -1,4 +1,4 @@
-package com.tontsadev.calculatorapp;
+package com.tontsadev.opencalc;
 
 import android.content.Context;
 
