@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             updateText("(");
             display.setSelection(cursorPos + 1);
         }
-        else if (closedPar < openPar && display.getText().toString().substring(textLen-1, textLen).equals("(")) {
+        else if (closedPar < openPar && !display.getText().toString().substring(textLen-1, textLen).equals("(")) {
             updateText(")");
             display.setSelection(cursorPos + 1);
         }
