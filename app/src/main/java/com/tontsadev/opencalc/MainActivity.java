@@ -147,14 +147,20 @@ public class MainActivity extends AppCompatActivity {
     public void equalsBTN(View view) {
 
         String userExp = display.getText().toString();
+        int textLen = display.getText().length();
         userExp = userExp.replaceAll("÷", "/");
         userExp = userExp.replaceAll("×", "*");
 
         Expression exp = new Expression(userExp);
         String result = String.valueOf(exp.calculate());
 
-        display.setText(result);
-        display.setSelection(result.length());
+        if (textLen >= 15) {
+            display.setText("");
+        }
+        else{
+            display.setText(result);
+            display.setSelection(result.length());
+        }
     }
 
     public void backspaceBTN(View view) {
