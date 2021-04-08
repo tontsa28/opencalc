@@ -175,4 +175,12 @@ public class MainActivity extends AppCompatActivity {
             display.setSelection(cursorPos - 1);
         }
     }
+
+    public void input(View view) {
+        int textLen = display.getText().length();
+
+        if (textLen >= 24) {
+            display.setText("");
+        }
+    }
 }

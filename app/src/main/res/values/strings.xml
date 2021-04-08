@@ -27,6 +27,6 @@
 
     <string name="display"> </string>
 
-    <string name="textMaxLength">16</string>
+    <string name="maxLength">24</string>
 
 </resources>
