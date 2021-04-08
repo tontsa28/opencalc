@@ -313,6 +313,7 @@
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
         android:textSize="@dimen/_48sdp"
+        android:maxLength="@string/textMaxLength"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"

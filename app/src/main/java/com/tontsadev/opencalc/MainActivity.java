@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         Expression exp = new Expression(userExp);
         String result = String.valueOf(exp.calculate());
 
-        if (textLen >= 15) {
+        if (textLen >= 16) {
             display.setText("");
         }
         else{
