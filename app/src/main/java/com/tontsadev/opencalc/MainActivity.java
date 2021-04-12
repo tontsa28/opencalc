@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    // updateText function
     private void updateText(String strToAdd){
         String oldStr = display.getText().toString();
         int cursorPos = display.getSelectionStart();
@@ -38,14 +39,15 @@ public class MainActivity extends AppCompatActivity {
 
         if (getString(R.string.display).equals(display.getText().toString())){
             display.setText(strToAdd);
-            display.setSelection(cursorPos + 1);
         }
         else{
             display.setText(String.format("%s%s%s", leftStr, strToAdd, rightStr));
-            display.setSelection(cursorPos + 1);
         }
+        display.setSelection(cursorPos + 1);
 
     }
+
+    // Button functions
 
     public void zeroBTN(View view) {
         updateText("0");
@@ -137,7 +139,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void plusMinusBTN(View view) {
-        updateText("+/-");
+
+        String oldStr = display.getText().toString();
+        int cursorPos = display.getSelectionStart();
+        String leftStr = oldStr.substring(0, cursorPos);
+        String rightStr = oldStr.substring(cursorPos);
+
+        if (getString(R.string.display).equals(display.getText().toString())){
+            display.setText("+-");
+        }
+        else{
+            display.setText(String.format("%s%s%s", leftStr, "+-", rightStr));
+        }
+        display.setSelection(cursorPos + 1);
     }
 
     public void pointBTN(View view) {
