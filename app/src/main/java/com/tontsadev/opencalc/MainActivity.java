@@ -95,26 +95,68 @@ public class MainActivity extends AppCompatActivity {
 
     public void fourBTN(View view) {
         updateText("4");
+
+        int textLen = display.getText().length();
+        View four = findViewById(R.id.fourBTN);
+
+        if (textLen >= 24) {
+            four.setEnabled(false);
+        }
     }
 
     public void fiveBTN(View view) {
         updateText("5");
+
+        int textLen = display.getText().length();
+        View five = findViewById(R.id.fiveBTN);
+
+        if (textLen >= 24) {
+            five.setEnabled(false);
+        }
     }
 
     public void sixBTN(View view) {
         updateText("6");
+
+        int textLen = display.getText().length();
+        View six = findViewById(R.id.sixBTN);
+
+        if (textLen >= 24) {
+            six.setEnabled(false);
+        }
     }
 
     public void sevenBTN(View view) {
         updateText("7");
+
+        int textLen = display.getText().length();
+        View seven = findViewById(R.id.sevenBTN);
+
+        if (textLen >= 24) {
+            seven.setEnabled(false);
+        }
     }
 
     public void eightBTN(View view) {
         updateText("8");
+
+        int textLen = display.getText().length();
+        View eight = findViewById(R.id.eightBTN);
+
+        if (textLen >= 24) {
+            eight.setEnabled(false);
+        }
     }
 
     public void nineBTN(View view) {
         updateText("9");
+
+        int textLen = display.getText().length();
+        View nine = findViewById(R.id.nineBTN);
+
+        if (textLen >= 24) {
+            nine.setEnabled(false);
+        }
     }
 
     public void clearBTN(View view) {
@@ -123,6 +165,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void exponentBTN(View view) {
         updateText("^");
+
+        int textLen = display.getText().length();
+        View exponent = findViewById(R.id.exponentBTN);
+
+        if (textLen >= 24) {
+            exponent.setEnabled(false);
+        }
     }
 
     public void parenthesesBTN(View view) {
@@ -130,6 +179,7 @@ public class MainActivity extends AppCompatActivity {
         int openPar = 0;
         int closedPar = 0;
         int textLen = display.getText().length();
+        View parentheses = findViewById(R.id.parenthesesBTN);
 
         for (int i = 0; i < cursorPos; i++) {
             if (display.getText().toString().substring(i, i+1).equals("(")) {
@@ -148,22 +198,54 @@ public class MainActivity extends AppCompatActivity {
             updateText(")");
             display.setSelection(cursorPos + 1);
         }
+
+        if (textLen >= 24) {
+            parentheses.setEnabled(false);
+        }
     }
 
     public void divideBTN(View view) {
         updateText("÷");
+
+        int textLen = display.getText().length();
+        View divide = findViewById(R.id.divideBTN);
+
+        if (textLen >= 24) {
+            divide.setEnabled(false);
+        }
     }
 
     public void multiplyBTN(View view) {
         updateText("×");
+
+        int textLen = display.getText().length();
+        View multiply = findViewById(R.id.multiplyBTN);
+
+        if (textLen >= 24) {
+            multiply.setEnabled(false);
+        }
     }
 
     public void addBTN(View view) {
         updateText("+");
+
+        int textLen = display.getText().length();
+        View add = findViewById(R.id.addBTN);
+
+        if (textLen >= 24) {
+            add.setEnabled(false);
+        }
     }
 
     public void subtractBTN(View view) {
         updateText("-");
+
+        int textLen = display.getText().length();
+        View subtract = findViewById(R.id.subtractBTN);
+
+        if (textLen >= 24) {
+            subtract.setEnabled(false);
+        }
     }
 
     public void plusMinusBTN(View view) {
@@ -173,6 +255,9 @@ public class MainActivity extends AppCompatActivity {
         String leftStr = oldStr.substring(0, cursorPos);
         String rightStr = oldStr.substring(cursorPos);
 
+        int textLen = display.getText().length();
+        View plusMinus = findViewById(R.id.plusMinusBTN);
+
         if (getString(R.string.display).equals(display.getText().toString())){
             display.setText("+-");
         }
@@ -180,16 +265,28 @@ public class MainActivity extends AppCompatActivity {
             display.setText(String.format("%s%s%s", leftStr, "+-", rightStr));
         }
         display.setSelection(cursorPos + 1);
+
+        if (textLen >= 24) {
+            plusMinus.setEnabled(false);
+        }
     }
 
     public void pointBTN(View view) {
         updateText(",");
+
+        int textLen = display.getText().length();
+        View point = findViewById(R.id.pointBTN);
+
+        if (textLen >= 24) {
+            point.setEnabled(false);
+        }
     }
 
     public void equalsBTN(View view) {
 
         String userExp = display.getText().toString();
         int textLen = display.getText().length();
+        View equals = findViewById(R.id.equalsBTN);
         userExp = userExp.replaceAll("÷", "/");
         userExp = userExp.replaceAll("×", "*");
 
@@ -202,6 +299,10 @@ public class MainActivity extends AppCompatActivity {
         else{
             display.setText(result);
             display.setSelection(result.length());
+        }
+
+        if (textLen >= 24) {
+            equals.setEnabled(false);
         }
     }
 
