@@ -51,18 +51,46 @@ public class MainActivity extends AppCompatActivity {
 
     public void zeroBTN(View view) {
         updateText("0");
+
+        int textLen = display.getText().length();
+        View zero = findViewById(R.id.zeroBTN);
+
+        if (textLen >= 24) {
+            zero.setEnabled(false);
+        }
     }
 
     public void oneBTN(View view) {
         updateText("1");
+
+        int textLen = display.getText().length();
+        View one = findViewById(R.id.oneBTN);
+
+        if (textLen >= 24) {
+            one.setEnabled(false);
+        }
     }
 
     public void twoBTN(View view) {
         updateText("2");
+
+        int textLen = display.getText().length();
+        View two = findViewById(R.id.twoBTN);
+
+        if (textLen >= 24) {
+            two.setEnabled(false);
+        }
     }
 
     public void threeBTN(View view) {
         updateText("3");
+
+        int textLen = display.getText().length();
+        View three = findViewById(R.id.threeBTN);
+
+        if (textLen >= 24) {
+            three.setEnabled(false);
+        }
     }
 
     public void fourBTN(View view) {
