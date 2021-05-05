@@ -7,11 +7,44 @@
     android:background="#303030"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="309dp"
+        android:layout_height="78dp"
+        android:layout_marginEnd="100dp"
+        android:autofillHints="false"
+        android:fontFamily="@font/opensans_extrabold"
+        android:inputType="none"
+        android:maxLength="@string/maxLength"
+        android:onClick="input"
+        android:scaleType="centerCrop"
+        android:text="@string/display"
+        android:textAlignment="textEnd"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#303030"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/input"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.909"
+        app:srcCompat="@drawable/backspace" />
+
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="350dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,25 +57,37 @@
             <Button
                 android:id="@+id/clearBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/clear" />
 
             <Button
                 android:id="@+id/parenthesesBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/parentheses" />
 
             <Button
                 android:id="@+id/exponentBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/exponent" />
 
             <Button
                 android:id="@+id/divideBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/divide" />
         </TableRow>
 
@@ -53,25 +98,37 @@
             <Button
                 android:id="@+id/sevenBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/seven" />
 
             <Button
                 android:id="@+id/eightBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/eight" />
 
             <Button
                 android:id="@+id/nineBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/nine" />
 
             <Button
                 android:id="@+id/multiplyBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/multiply" />
         </TableRow>
 
@@ -82,25 +139,37 @@
             <Button
                 android:id="@+id/fourBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/four" />
 
             <Button
                 android:id="@+id/fiveBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/five" />
 
             <Button
                 android:id="@+id/sixBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/six" />
 
             <Button
                 android:id="@+id/subtractBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/subtract" />
         </TableRow>
 
@@ -111,25 +180,37 @@
             <Button
                 android:id="@+id/oneBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/one" />
 
             <Button
                 android:id="@+id/twoBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/two" />
 
             <Button
                 android:id="@+id/threeBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/three" />
 
             <Button
                 android:id="@+id/addBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/add" />
         </TableRow>
 
@@ -140,35 +221,39 @@
             <Button
                 android:id="@+id/plusMinusBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/plusMinus" />
 
             <Button
                 android:id="@+id/zeroBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/zero" />
 
             <Button
                 android:id="@+id/pointBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/point" />
 
             <Button
                 android:id="@+id/equalsBTN"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:textSize="32sp"
+                android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/equals" />
         </TableRow>
     </TableLayout>
 
-    <View
-        android:id="@+id/input"
-        android:layout_width="351dp"
-        android:layout_height="133dp"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
