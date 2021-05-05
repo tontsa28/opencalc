@@ -7,15 +7,16 @@
     android:background="#303030"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/input"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="309dp"
         android:layout_height="78dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="false"
         android:fontFamily="@font/opensans_extrabold"
         android:inputType="none"
-        android:maxLength="@string/maxLength"
+        android:maxLength="24"
         android:onClick="input"
         android:scaleType="centerCrop"
         android:text="@string/display"
@@ -26,19 +27,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="103dp"
+        android:layout_height="76dp"
         android:background="#303030"
+        android:contentDescription=""
+        android:onClick="backspaceBTN"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/input"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.909"
-        app:srcCompat="@drawable/backspace" />
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@drawable/backspace"
+        tools:ignore="ContentDescription" />
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -56,37 +61,49 @@
 
             <Button
                 android:id="@+id/clearBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="clearBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/clear" />
 
             <Button
                 android:id="@+id/parenthesesBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="parenthesesBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/parentheses" />
 
             <Button
                 android:id="@+id/exponentBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="exponentBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/exponent" />
 
             <Button
                 android:id="@+id/divideBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="divideBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/divide" />
         </TableRow>
@@ -97,37 +114,49 @@
 
             <Button
                 android:id="@+id/sevenBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="sevenBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/seven" />
 
             <Button
                 android:id="@+id/eightBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="eightBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/eight" />
 
             <Button
                 android:id="@+id/nineBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="nineBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/nine" />
 
             <Button
                 android:id="@+id/multiplyBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="multiplyBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/multiply" />
         </TableRow>
@@ -138,37 +167,49 @@
 
             <Button
                 android:id="@+id/fourBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="fourBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/four" />
 
             <Button
                 android:id="@+id/fiveBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="fiveBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/five" />
 
             <Button
                 android:id="@+id/sixBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="sixBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/six" />
 
             <Button
                 android:id="@+id/subtractBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="subtractBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/subtract" />
         </TableRow>
@@ -179,37 +220,49 @@
 
             <Button
                 android:id="@+id/oneBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="oneBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/one" />
 
             <Button
                 android:id="@+id/twoBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="twoBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/two" />
 
             <Button
                 android:id="@+id/threeBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="threeBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/three" />
 
             <Button
                 android:id="@+id/addBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="addBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/add" />
         </TableRow>
@@ -220,40 +273,51 @@
 
             <Button
                 android:id="@+id/plusMinusBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="plusMinusBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/plusMinus" />
 
             <Button
                 android:id="@+id/zeroBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="zeroBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/zero" />
 
             <Button
                 android:id="@+id/pointBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="pointBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/point" />
 
             <Button
                 android:id="@+id/equalsBTN"
+                style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="70dp"
                 android:layout_weight="1"
-                android:textSize="32sp"
+                android:textSize="36sp"
+                android:onClick="equalsBTN"
+                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
                 android:text="@string/equals" />
         </TableRow>
     </TableLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
