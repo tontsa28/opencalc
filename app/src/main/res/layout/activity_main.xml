@@ -7,30 +7,31 @@
     android:background="#303030"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputLayout
+    <EditText
         android:id="@+id/input"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_width="309dp"
         android:layout_height="78dp"
         android:layout_marginEnd="100dp"
         android:autofillHints="false"
         android:fontFamily="@font/opensans_extrabold"
         android:inputType="none"
-        android:maxLength="24"
         android:onClick="input"
         android:scaleType="centerCrop"
         android:text="@string/display"
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:maxLength="24"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="LabelFor" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backspace"
         android:layout_width="103dp"
         android:layout_height="76dp"
         android:background="#303030"
@@ -49,7 +50,7 @@
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -63,49 +64,50 @@
                 android:id="@+id/clearBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="clearBTN"
-                android:textColor="#FFFFFF"
+                android:backgroundTint="#E64539"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/clear" />
+                android:onClick="clearBTN"
+                android:text="@string/clear"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/parenthesesBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="parenthesesBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/parentheses" />
+                android:onClick="parenthesesBTN"
+                android:text="@string/parentheses"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/exponentBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="exponentBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/exponent" />
+                android:onClick="exponentBTN"
+                android:text="@string/exponent"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/divideBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="divideBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/divide" />
+                android:onClick="divideBTN"
+                android:text="@string/divide"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </TableRow>
 
         <TableRow
@@ -116,49 +118,49 @@
                 android:id="@+id/sevenBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="sevenBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/seven" />
+                android:onClick="sevenBTN"
+                android:text="@string/seven"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/eightBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="eightBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/eight" />
+                android:onClick="eightBTN"
+                android:text="@string/eight"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/nineBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="nineBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/nine" />
+                android:onClick="nineBTN"
+                android:text="@string/nine"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/multiplyBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="multiplyBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/multiply" />
+                android:onClick="multiplyBTN"
+                android:text="@string/multiply"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </TableRow>
 
         <TableRow
@@ -169,49 +171,49 @@
                 android:id="@+id/fourBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="fourBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/four" />
+                android:onClick="fourBTN"
+                android:text="@string/four"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/fiveBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="fiveBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/five" />
+                android:onClick="fiveBTN"
+                android:text="@string/five"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/sixBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="sixBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/six" />
+                android:onClick="sixBTN"
+                android:text="@string/six"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/subtractBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="subtractBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/subtract" />
+                android:onClick="subtractBTN"
+                android:text="@string/subtract"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </TableRow>
 
         <TableRow
@@ -222,49 +224,49 @@
                 android:id="@+id/oneBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="oneBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/one" />
+                android:onClick="oneBTN"
+                android:text="@string/one"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/twoBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="twoBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/two" />
+                android:onClick="twoBTN"
+                android:text="@string/two"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/threeBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="threeBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/three" />
+                android:onClick="threeBTN"
+                android:text="@string/three"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/addBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="addBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/add" />
+                android:onClick="addBTN"
+                android:text="@string/add"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </TableRow>
 
         <TableRow
@@ -275,49 +277,50 @@
                 android:id="@+id/plusMinusBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="plusMinusBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/plusMinus" />
+                android:onClick="plusMinusBTN"
+                android:text="@string/plusMinus"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/zeroBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="zeroBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/zero" />
+                android:onClick="zeroBTN"
+                android:text="@string/zero"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/pointBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="pointBTN"
-                android:textColor="#FFFFFF"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/point" />
+                android:onClick="pointBTN"
+                android:text="@string/point"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
 
             <Button
                 android:id="@+id/equalsBTN"
                 style="?android:buttonBarButtonStyle"
                 android:layout_width="wrap_content"
-                android:layout_height="70dp"
+                android:layout_height="80dp"
                 android:layout_weight="1"
-                android:textSize="36sp"
-                android:onClick="equalsBTN"
-                android:textColor="#FFFFFF"
+                android:backgroundTint="#16C75A"
                 android:fontFamily="@font/opensans_extrabold"
-                android:text="@string/equals" />
+                android:onClick="equalsBTN"
+                android:text="@string/equals"
+                android:textColor="#FFFFFF"
+                android:textSize="36sp" />
         </TableRow>
     </TableLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
