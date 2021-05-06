@@ -27,4 +27,6 @@
 
     <string name="display"> </string>
 
+    <string name="settings">Settings</string>
+
 </resources>
