@@ -7,6 +7,10 @@
     android:background="#303030"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
     <EditText
         android:id="@+id/input"
         android:layout_width="309dp"

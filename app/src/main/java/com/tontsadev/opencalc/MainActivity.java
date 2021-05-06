@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,14 +21,17 @@ public class MainActivity extends AppCompatActivity {
         display = findViewById(R.id.input);
         display.setShowSoftInputOnFocus(false);
 
-        display.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (getString(R.string.display).equals(display.getText().toString())){
-                    display.setText("");
-                }
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        display.setOnClickListener(view -> {
+            if (getString(R.string.display).equals(display.getText().toString())){
+                display.setText("");
             }
         });
+    }
+
+    private void setSupportActionBar(Toolbar toolbar) {
     }
 
     // updateText function
@@ -182,19 +186,19 @@ public class MainActivity extends AppCompatActivity {
         View parentheses = findViewById(R.id.parenthesesBTN);
 
         for (int i = 0; i < cursorPos; i++) {
-            if (display.getText().toString().substring(i, i+1).equals("(")) {
+            if (display.getText().toString().charAt(i) == '(') {
                 openPar += 1;
             }
-            if (display.getText().toString().substring(i, i+1).equals(")")) {
+            if (display.getText().toString().charAt(i) == ')') {
                 closedPar += 1;
             }
         }
 
-        if (openPar == closedPar || display.getText().toString().substring(textLen-1, textLen).equals("(")) {
+        if (openPar == closedPar || display.getText().toString().charAt(textLen - 1) == '(') {
             updateText("(");
             display.setSelection(cursorPos + 1);
         }
-        else if (closedPar < openPar && !display.getText().toString().substring(textLen-1, textLen).equals("(")) {
+        else if (closedPar < openPar && display.getText().toString().charAt(textLen - 1) != '(') {
             updateText(")");
             display.setSelection(cursorPos + 1);
         }
