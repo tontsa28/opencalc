@@ -7,29 +7,6 @@
     android:background="#303030"
     tools:context=".MainActivity">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <com.google.android.material.appbar.MaterialToolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/toolbar"
-            android:backgroundTint="#303030"
-            android:layout_gravity="top" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            style="?android:buttonBarButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#303030"
-            android:src="@drawable/ic_settings_white"
-            app:layout_anchor="@id/toolbar"
-            tools:ignore="ContentDescription" />
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
     <EditText
         android:id="@+id/input"
         android:layout_width="309dp"
@@ -58,7 +35,6 @@
         android:layout_width="103dp"
         android:layout_height="76dp"
         android:background="#303030"
-        android:contentDescription=""
         android:onClick="backspaceBTN"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -67,6 +43,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.989"
         app:srcCompat="@drawable/backspace"
+        tools:ignore="ContentDescription" />
+
+    <ImageButton
+        android:id="@+id/settingsBTN"
+        android:layout_width="53dp"
+        android:layout_height="44dp"
+        android:background="#303030"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_settings_white"
         tools:ignore="ContentDescription" />
 
     <TableLayout

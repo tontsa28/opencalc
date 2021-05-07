@@ -7,8 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         display = findViewById(R.id.input);
         display.setShowSoftInputOnFocus(false);
 
-        Button floatingActionButton = findViewById(R.id.miSettings);
-        floatingActionButton.setOnClickListener(view -> openActivity2());
+        ImageButton settingsBTN = findViewById(R.id.settingsBTN);
+        settingsBTN.setOnClickListener(view -> openSettingsActivity());
 
         display.setOnClickListener(view -> {
             if (getString(R.string.display).equals(display.getText().toString())){
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void openActivity2() {
-        Intent intent = new Intent(this, MainActivity2.class);
+    public void openSettingsActivity() {
+        Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
 
