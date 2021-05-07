@@ -22,4 +22,25 @@
         app:srcCompat="@drawable/ic_arrowback_white"
         tools:ignore="ContentDescription" />
 
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="606dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backBTN" >
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switch2"
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/opensans_extrabold"
+            android:textSize="16sp"
+            android:text="@string/darktheme" />
+    </TableRow>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
