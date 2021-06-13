@@ -17,6 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
         backBTN.setOnClickListener(view -> openMainActivity());
     }
 
+    // Go back to calculator activity
     public void openMainActivity() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
