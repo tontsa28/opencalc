@@ -1,56 +1,100 @@
 package com.tontsadev.opencalc;
 
+// Import AppCompatActivity and math parser for parsing equations
 import androidx.appcompat.app.AppCompatActivity;
 import org.mariuszgromada.math.mxparser.*;
 
+// Import other classes
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.SpannableStringBuilder;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageButton;
+import androidx.appcompat.widget.Toolbar;
 
+import java.util.Objects;
+
+// MainActivity class
 public class MainActivity extends AppCompatActivity {
     
     // EditText variable
     private EditText display;
 
+    // Initialize the activity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        // Change theme from splash screen to default theme and set activity_main as layout
         super.onCreate(savedInstanceState);
         setTheme(R.style.Theme_OpenCalc);
         setContentView(R.layout.activity_main);
 
+        // Add toolbar to activity
+        Toolbar toolbar = findViewById(R.id.toolBar);
+        setSupportActionBar(toolbar);
+        Objects.requireNonNull(getSupportActionBar()).setDisplayShowTitleEnabled(false);
+
+        // Add input field to activity
         display = findViewById(R.id.input);
         display.setShowSoftInputOnFocus(false);
 
-        ImageButton settingsBTN = findViewById(R.id.settingsBTN);
-        settingsBTN.setOnClickListener(view -> openSettingsActivity());
-
+        // Make sure the input field is empty
         display.setOnClickListener(view -> {
-            if (getString(R.string.display).equals(display.getText().toString())){
+            if (getString(R.string.display).equals(display.getText().toString())) {
                 display.setText("");
             }
         });
+
+    }
+
+    // Initialize toolbar
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        // Add menu items to the toolbar
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_main, menu);
+        return true;
+
     }
 
     // Open settings
-    public void openSettingsActivity() {
-        Intent intent = new Intent(this, SettingsActivity.class);
-        startActivity(intent);
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        // Open settings when settingsBTN is clicked
+        if (id == R.id.settingsBTN) {
+
+            // Change activity
+            Intent intent = new Intent (MainActivity.this, SettingsActivity.class);
+            startActivity(intent);
+            return true;
+
+        }
+
+        // Return clicked activity
+        return super.onOptionsItemSelected(item);
+
     }
 
-    // updateText function
-    private void updateText(String strToAdd){
+    // Update text to the input field
+    private void updateText(String strToAdd) {
+
+        // Set required variables for the function
         String oldStr = display.getText().toString();
         int cursorPos = display.getSelectionStart();
         String leftStr = oldStr.substring(0, cursorPos);
         String rightStr = oldStr.substring(cursorPos);
 
-        if (getString(R.string.display).equals(display.getText().toString())){
+        if (getString(R.string.display).equals(display.getText().toString())) {
             display.setText(strToAdd);
         }
-        else{
+        else {
             display.setText(String.format("%s%s%s", leftStr, strToAdd, rightStr));
         }
         display.setSelection(cursorPos + 1);
@@ -268,7 +312,7 @@ public class MainActivity extends AppCompatActivity {
         int textLen = display.getText().length();
         View plusMinus = findViewById(R.id.plusMinusBTN);
 
-        if (getString(R.string.display).equals(display.getText().toString())){
+        if (getString(R.string.display).equals(display.getText().toString())) {
             display.setText("+-");
         }
         else{
