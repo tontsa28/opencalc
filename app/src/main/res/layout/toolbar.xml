@@ -5,5 +5,4 @@
     android:background="#121212"
     android:id="@+id/toolBar"
     android:theme="@style/ThemeOverlay.MaterialComponents.Dark">
-
 </androidx.appcompat.widget.Toolbar>
