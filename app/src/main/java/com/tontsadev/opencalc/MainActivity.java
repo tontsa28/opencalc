@@ -343,6 +343,7 @@ public class MainActivity extends AppCompatActivity {
         View equals = findViewById(R.id.equalsBTN);
         userExp = userExp.replaceAll("÷", "/");
         userExp = userExp.replaceAll("×", "*");
+        userExp = userExp.replaceAll(",", ".");
 
         Expression exp = new Expression(userExp);
         String result = String.valueOf(exp.calculate());
